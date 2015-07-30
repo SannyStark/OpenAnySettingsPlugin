@@ -3,13 +3,17 @@ OpenAnySettingsPlugin
 OpenAnySettings opens your apps settings in cordova aplication
 
 ## Installation
+```
 cordova plugin add com.sanny.openanysettings
+```
 
 ## Support
 Android
 
 
 ## Usage
+
+```javascript
 // open wi-fi manager settings
 window.plugins.openanysettingsplugin.openWiFiSettings(true);
 
@@ -21,4 +25,6 @@ window.plugins.openanysettingsplugin.openSecuritySettings(true);
 if(device.platform === 'iOS' && device.version > 8) {
 	window.plugins.openanysettingsplugin.openWiFiSettings();
 }
+```
+
 
