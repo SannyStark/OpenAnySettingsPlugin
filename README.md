@@ -15,10 +15,10 @@ Android
 
 ```javascript
 // open wi-fi manager settings
-window.plugins.openanysettingsplugin.openWiFiSettings(true);
+window.plugins.openanysettingsplugin.openWiFiSettings(successCallback, failureCallback);
 
 // open security settings
-window.plugins.openanysettingsplugin.openSecuritySettings(true);
+window.plugins.openanysettingsplugin.openSecuritySettings(successCallback, failureCallback);
 
 ```
 
