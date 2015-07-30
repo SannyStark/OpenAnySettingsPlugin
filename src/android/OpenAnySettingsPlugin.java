@@ -29,7 +29,7 @@ public class OpenAnySettingsPlugin extends CordovaPlugin {
 			callbackContext.sendPluginResult(new PluginResult(
 					PluginResult.Status.OK));
 
-		} catch (JSONException ex) {
+		} catch (Exception ex) {
 			callbackContext.sendPluginResult(new PluginResult(
 					PluginResult.Status.JSON_EXCEPTION));
 		}
