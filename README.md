@@ -1,6 +1,6 @@
 OpenAnySettingsPlugin
 ======
-OpenAnySettings opens your apps settings in cordova aplication
+OpenAnySettings opens your apps settings in cordova application
 
 ## Installation
 ```
