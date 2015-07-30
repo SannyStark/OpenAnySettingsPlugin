@@ -24,14 +24,8 @@ public class OpenAnySettingsPlugin extends CordovaPlugin {
 		}
 
 		try {
-			String value = args.getString(0);
-
-			if (value.equalsIgnoreCase("TRUE")) {
-				this.cordova.getActivity().startActivity(
+			this.cordova.getActivity().startActivity(
 						new Intent(intentString));
-			} else {
-				LOG.e("OpenSettingPage", "Unable to open settings ["+intentString+"]");
-			}
 			callbackContext.sendPluginResult(new PluginResult(
 					PluginResult.Status.OK));
 

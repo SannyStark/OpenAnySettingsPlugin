@@ -4,16 +4,16 @@ function OpenAnySettingsPlugin() {
 }
 
 // function call used to invoke any settings.
-OpenAnySettingsPlugin.prototype.openWiFiSettings = function(value, successCallback,
+OpenAnySettingsPlugin.prototype.openWiFiSettings = function(successCallback,
 		failureCallback) {
 	return cordova.exec(successCallback, failureCallback,
-			'OpenAnySettingsPlugin', "openWiFiSettings", [ value ]);
+			'OpenAnySettingsPlugin', "openWiFiSettings", []);
 }
 
-OpenAnySettingsPlugin.prototype.openSecuritySettings = function(value, successCallback,
+OpenAnySettingsPlugin.prototype.openSecuritySettings = function(successCallback,
 		failureCallback) {
 	return cordova.exec(successCallback, failureCallback,
-			'OpenAnySettingsPlugin', "openSecuritySettings", [ value ]);
+			'OpenAnySettingsPlugin', "openSecuritySettings", []);
 }
 
 
