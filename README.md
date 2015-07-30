@@ -20,6 +20,9 @@ window.plugins.openanysettingsplugin.openWiFiSettings(successCallback, failureCa
 // open security settings
 window.plugins.openanysettingsplugin.openSecuritySettings(successCallback, failureCallback);
 
+// open wireless settings
+window.plugins.openanysettingsplugin.openWirelessSettings(successCallback, failureCallback);
+
 ```
 
 
