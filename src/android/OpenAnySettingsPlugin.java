@@ -21,6 +21,8 @@ public class OpenAnySettingsPlugin extends CordovaPlugin {
 			intentString = Settings.ACTION_WIFI_SETTINGS;
 		} else if(action.equals("openSecuritySettings")){
 			intentString = Settings.ACTION_SECURITY_SETTINGS;
+		} else if(action.equals("openWirelessSettings")){
+			intentString = Settings.ACTION_WIRELESS_SETTINGS;
 		}
 
 		try {

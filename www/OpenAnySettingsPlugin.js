@@ -16,6 +16,12 @@ OpenAnySettingsPlugin.prototype.openSecuritySettings = function(successCallback,
 			'OpenAnySettingsPlugin', "openSecuritySettings", []);
 }
 
+OpenAnySettingsPlugin.prototype.openWirelessSettings = function(successCallback,
+		failureCallback) {
+	return cordova.exec(successCallback, failureCallback,
+			'OpenAnySettingsPlugin', "openWirelessSettings", []);
+}
+
 
 OpenAnySettingsPlugin.install = function () {
 	if (!window.plugins) {
