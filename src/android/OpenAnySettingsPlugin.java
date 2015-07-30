@@ -17,17 +17,11 @@ public class OpenAnySettingsPlugin extends CordovaPlugin {
 			final CallbackContext callbackContext) throws JSONException {
 		
 		String intentString = Settings.ACTION_SETTINGS;
-		switch (action) {
-			case "openWiFiSettings" :
-				intentString = Settings.ACTION_WIFI_SETTINGS;
-				break;
-			case "openSecuritySettings" :
-				intentString = Settings.ACTION_SECURITY_SETTINGS;
-				break;
-			default:
-				break;
+		if(action.equals("openWiFiSettings")) {
+			intentString = Settings.ACTION_WIFI_SETTINGS;
+		} else if(action.equals("openSecuritySettings")){
+			intentString = Settings.ACTION_SECURITY_SETTINGS;
 		}
-
 
 		try {
 			String value = args.getString(0);
